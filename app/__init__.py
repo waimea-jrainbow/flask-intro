@@ -9,10 +9,11 @@ app = Flask(__name__)
 def home():
     return render_template('pages/home.jinja')
 
-@app.get("/random/")
-def random_number():
-    return str(randint(1,1000))
-
 @app.get("/about/")
 def about():
     return render_template('/pages/about.jinja')
+
+@app.get("/random/")
+def random_number():
+    randNum = str(randint(1,1000))
+    return render_template('/pages/random.jinja' , number=randNum)
