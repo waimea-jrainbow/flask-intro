@@ -3,3 +3,13 @@ article#random{
     text-align: center;
     color: var(--pico-primary);
 }
+
+#homeButton404{
+    display: flex;
+    justify-content: center;
+}
+
+#404Text{
+    display: flex;
+    justify-content: center;
+}
